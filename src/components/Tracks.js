@@ -11,7 +11,7 @@ const Tracks = (props) => {
     const removeTrack = useCallback(
         () => {
             props.onRemove(props.tracks)
-        }, [props.onRemove, props.tracks]
+        }, [props]
     );
 
     const renderAction = () => {

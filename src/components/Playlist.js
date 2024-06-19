@@ -9,7 +9,7 @@ const Playlist = (props) => {
     const handleNameChange = useCallback(
         (e) => {
             props.onNameChange(e.target.value)
-        }, [props.onNameChange]);
+        }, [props]);
 
     return (
         <div className="Playlists">

@@ -13,7 +13,7 @@ const SearchBar = (props) => {
 
     const search = useCallback(() => {
         props.onSearch(term);
-    }, [props.onSearch, term]);
+    }, [props, term]);
 
     const handleSearch = (e) => {
      try {
