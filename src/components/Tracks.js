@@ -6,7 +6,7 @@ const Tracks = (props) => {
    const addTrack = useCallback(
     () => {
         props.onAdd(props.tracks)
-    }, [props.onAdd, props.tracks]);
+    }, [props]);
 
     const removeTrack = useCallback(
         () => {
